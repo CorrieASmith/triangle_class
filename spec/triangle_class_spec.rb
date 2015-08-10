@@ -13,4 +13,12 @@ describe(MyTriangle) do
       test_triangle = MyTriangle.new(5, 5, 10)
       expect(test_triangle.triangle?()).to(eq(true))
     end
+
+  describe("#equilateral?") do
+    it ("returns true if it is an equialiteral triangle") do
+      test_equilateral = MyTriangle.new(5,5,5)
+      expect(test_equilateral.equilateral?()).to(eq(true))
+    end
+  end
+
 end

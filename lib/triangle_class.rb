@@ -14,4 +14,9 @@ class MyTriangle
         true
       end
   end
+  define_method(:equilateral?)do
+    if @side1 = @side2 = @side3
+      true
+    end
+  end
 end
