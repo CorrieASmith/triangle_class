@@ -1,17 +1,17 @@
 <h1>Here's your triangle type!</h1>
 
-<% if @MyTriangle.triangle?() %>
-<h5> It is not a triangle!</h5>
-<% end %>
+<% if @triangle.triangle?() %>
+ <h5> It is a triangle!</h5>
+ <% end %>
 
-<% if @MyTriangle.equilateral?() %>
-<h5> It is an equilateral triangle!</h5>
-<% end %>
+ <% if @triangle.equilateral?() %>
+ <h5> It is an equilateral triangle!</h5>
+ <% end %>
 
-<% if @MyTriangle.isosceles?() %>
-<h5> It is an isosceles triangle!</h5>
-<% end %>
+ <% if @triangle.isosceles?() %>
+ <h5> It is an isosceles triangle!</h5>
+ <% end %>
 
-<% if @MyTriangle.scalene?() %>
-<h5> It is a scalene triangle!</h5>
-<% end %>
+ <% if @triangle.scalene?() %>
+ <h5> It is a scalene triangle!</h5>
+ <% end %>
