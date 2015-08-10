@@ -15,7 +15,7 @@ class MyTriangle
       end
   end
 
-  define_method(:equilateral?)do
+  define_method(:equilateral?) do
       if @side1 == @side2 = @side3
         true
       elsif @side1 == @side2
@@ -24,6 +24,16 @@ class MyTriangle
         false
       elsif @side3 == @side1
         false
+    end
+  end
+
+  define_method(:isosceles?) do
+    if @side1 == @side2
+      true
+    elsif @side2 == @side3
+      true
+    elsif @side3 == @side1
+      true
     end
   end
 end

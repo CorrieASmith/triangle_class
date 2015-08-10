@@ -26,4 +26,10 @@ describe(MyTriangle) do
     end
   end
 
+  describe("#isosceles?") do
+    it("returns true if it is an isosceles triangle") do
+      test_isosceles = MyTriangle.new(5, 5, 7)
+      expect(test_isosceles.isosceles?()).to(eq(true))
+    end
+  end
 end
