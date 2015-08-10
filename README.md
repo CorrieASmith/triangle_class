@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   Triangle class application
 
     Determine what type of triangle you have, 2015/08/10
@@ -43,3 +44,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+=======
+# triangle_class
+This is an app that receives three numbers from the user and returns what type of triangle, if any, that it is. 
+This is our first time experimenting with creating our own classes. 
+We've been focusing on writing clear, concise specs with sound logic.
+We have also been going through our code line by line and making sure everything makes sense.
+>>>>>>> 0e6a6500ab8f16c41a9208945df9de1e63800138
