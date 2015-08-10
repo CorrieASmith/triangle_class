@@ -42,6 +42,10 @@ describe(MyTriangle) do
       test_scalene = MyTriangle.new(3,4,5)
       expect(test_scalene.scalene?()).to(eq(true))
     end
+    it("returns false if two or all of the sides are equal") do
+      test_scalene = MyTriangle.new(3,3,5)
+      expect(test_scalene.scalene?()).to(eq(false))
+    end
   end
 
 end

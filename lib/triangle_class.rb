@@ -16,40 +16,26 @@ class MyTriangle
   end
 
   define_method(:equilateral?) do
-      if @side1 == @side2 = @side3
-        true
-      elsif @side1 == @side2
-        false
-      elsif @side2 == @side3
-        false
-      elsif @side3 == @side1
-        false
+    if @side1 == @side2 && @side2 == @side3
+      true
+    else
+      false
     end
   end
 
   define_method(:isosceles?) do
-    if @side1 == @side2
+    if @side1 == @side2 || @side3 == @side2 || @side3 == @side1
       true
-    elsif @side2 == @side3
-      true
-    elsif @side3 == @side1
-      true
-    elsif @side1 = @side2
-      false
-    elsif @side2 = @side3
-      false
-    elsif @side3 = @side1
+    elsif @side1 != @side2 || @side3 != @side2 || @side3 != @side1
       false
     end
   end
 
   define_method(:scalene?) do
-    if @side1 != @side2
+    if @side1 != @side2 && @side2 != @side3 && @side3 != @side1
       true
-    elsif @side2 != @side3
-      true
-    elsif @side3 != @side1
-      true
+    elsif @side1 == @side2 || @side2 == @side3 || @side3 == @side1
+      false
     end
   end
 
