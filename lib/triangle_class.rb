@@ -43,4 +43,14 @@ class MyTriangle
     end
   end
 
+  define_method(:scalene?) do
+    if @side1 != @side2
+      true
+    elsif @side2 != @side3
+      true
+    elsif @side3 != @side1
+      true
+    end
+  end
+
 end
