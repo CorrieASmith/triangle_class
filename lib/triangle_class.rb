@@ -5,10 +5,13 @@ class MyTriangle
     @side2 = side2
     @side3 = side3
   end
+
   define_method(:triangle?) do
     sum = @side1 + @side2
-      if sum <= @side3
+      if sum < @side3
         false
-    end
+      elsif sum >= @side3
+        true
+      end
   end
 end
